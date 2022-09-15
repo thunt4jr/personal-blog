@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 const DOMAIN = "https://terryhunt.dev";
 const DEFAULT_OG_IMAGE = "";
 
-export default function about({
+export default function About({
   title = "Learn more about Terry Hunt",
   description = "",
   siteName = "About Page",

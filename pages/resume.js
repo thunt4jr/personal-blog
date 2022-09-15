@@ -121,8 +121,8 @@ const DEFAULT_OG_IMAGE = "";
 
 export default function resume({
   title = "Terry Hunt's Resume - Full-Stack Developer",
-  description = "",
-  siteName = "Default Page",
+  description = "Terry Hunt's Resume - Full Stack Developer ",
+  siteName = "Resume Page",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,
   ogType = "website",
