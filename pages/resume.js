@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import Contact from "../components/Contact";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";

@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
 const DOMAIN = "https://terryhunt.dev";
