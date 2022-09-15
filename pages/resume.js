@@ -8,7 +8,7 @@ import Link from "next/link";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const contact = [
+const contactInfo = [
   { icon: faPhone, href: "tel:+18133591477", word: "Call" },
   { icon: faEnvelope, href: "mailto:hello@terryhunt.dev", word: "Email" },
   {
@@ -132,7 +132,7 @@ export default function resume() {
         </div>
         <div className='row'>
           <div className='col-2'>
-            {contact.map((link, index) => (
+            {contactInfo.map((link, index) => (
               <div className='d-flex mb-2' key={index}>
                 <Link href={link.href} target={link.target} rel={link.rel}>
                   <a>
