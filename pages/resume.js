@@ -116,18 +116,7 @@ const experience = [
   },
 ];
 
-const DOMAIN = "https://terryhunt.dev";
-const DEFAULT_OG_IMAGE = "";
-
-export default function resume({
-  title = "Terry Hunt's Resume - Full-Stack Developer",
-  description = "Terry Hunt's Resume - Full Stack Developer ",
-  siteName = "Resume Page",
-  canonical = DOMAIN,
-  ogImage = DEFAULT_OG_IMAGE,
-  ogType = "website",
-  twitterHandle = "@TerryHuntDev",
-}) {
+export default function resume() {
   return (
     <>
       <Navbar />
