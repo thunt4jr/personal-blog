@@ -8,7 +8,7 @@ const clients = [
     name: "SB Reef Lights",
     url: "https://sbreeflights.com/",
     description:
-      "SB Reef Lights is owned by Mike and Collette Herman who started off group buy from Facebook.",
+      "SB Reef Lights is owned by Mike and Collette Herman, who started a group buy from Facebook and is still in business today. This is the most successful business in the saltwater hobby.",
     target: "_blank",
     href: "/sbreeflights",
     image: "/images/sb-reef-lights-logo.jpg",
