@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Contact from "../components/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +13,8 @@ import {
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
+import { Container } from "react-bootstrap";
+import TopMenu from "../components/Navbar";
 
 const DOMAIN = "https://terryhunt.dev";
 const DEFAULT_OG_IMAGE = "";
@@ -91,13 +92,13 @@ export default function Home({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
+      <TopMenu />
       <main className='d-flex justify-content-center align-items-center pt-3'>
-        <div className='container text-center'>
+        <Container className='container text-center'>
           <h1 className='display-4'>Terry Hunt</h1>
           <h2 className='display-6'>Full-Stack Developer</h2>
 
-          <p class='text-center lead'>
+          <p className='text-center lead'>
             I am a full stack developer with experience understanding frontend,
             backend, and serverside. Also, with excellent knowledge of SEO
             (Search Engine Optimization), SEM (Search Engine Marketing), and SMM
@@ -121,12 +122,12 @@ export default function Home({
             targeting for their eCommerce, and improving the client’s speed or
             functionality for their websites. With my excellent understanding of
             web development, I am very motivated and self-driven on new and
-            existing projects or jobs. Currently,
+            existing projects or jobs.
           </p>
           <Link href='/about'>
             <a className='btn'>Learn More...</a>
           </Link>
-        </div>
+        </Container>
       </main>
       <Contact />
       <Footer />

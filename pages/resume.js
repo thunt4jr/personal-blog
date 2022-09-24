@@ -2,11 +2,11 @@ import React from "react";
 import Head from "next/head";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import TopMenu from "../components/Navbar";
 
 const contactInfo = [
   { icon: faPhone, href: "tel:+18133591477", word: "Call" },
@@ -80,6 +80,8 @@ const education = [
   },
 ];
 const skills = [
+  { language: "WordPress", percentage: "90", skillStyle: "90%" },
+  { language: "Prestashop", percentage: "90", skillStyle: "90%" },
   { language: "React JS", percentage: "60", skillStyle: "60%" },
   { language: "JavaScript", percentage: "50", skillStyle: "50%" },
   { language: "HTML", percentage: "90", skillStyle: "90%" },
@@ -179,7 +181,7 @@ export default function resume({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
+      <TopMenu />
       <div className='container'>
         <div className='row px-3'>
           <div className='col'>
@@ -279,14 +281,16 @@ export default function resume({
             can always reach out to me for any questions about software
             development.
           </p>
-          <button
-            type='button'
-            className='btn btn-secondary btn-lg'
-            href='files/Terry-Hunt-Resume.pdf'
+          <a
+            className='text-center'
+            href='https://terryhunt.dev/files/Terry-Hunt-Resume.pdf'
             target='_blank'
+            rel='noopener noreferrer'
           >
-            Download Resume
-          </button>
+            <button type='button' className='btn btn-secondary btn-lg'>
+              Download Resume
+            </button>
+          </a>
         </div>
         <hr />
       </div>
