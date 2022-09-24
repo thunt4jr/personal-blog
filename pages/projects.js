@@ -10,7 +10,7 @@ const clients = [
     description:
       "SB Reef Lights is owned by Mike and Collette Herman, who started a group buy from Facebook and is still in business today. This is the most successful business in the saltwater hobby.",
     target: "_blank",
-    href: "/sbreeflights",
+    href: "/sb-reef-lights",
     image: "/images/sb-reef-lights-logo.jpg",
   },
   {
@@ -19,7 +19,7 @@ const clients = [
     description:
       "The Grand Concourse Railroad is a nonprofit ogranization to educated about trains to public. Often time, there are free Saturdays to promote the train rides.",
     target: "_blank",
-    href: "/grandconcourserailroad",
+    href: "/grand-concourse-railroad",
     image: "/images/grand-concourse-railroad.png",
   },
 ];
