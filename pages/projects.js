@@ -16,46 +16,11 @@ const clients = [
   {
     name: "Grand Concourse Railroad",
     url: "https://grand-concourse-railroad.netlify.app/",
-    description: "Lating Filler in English blah blah blah blah blah",
+    description:
+      "The Grand Concourse Railroad is a nonprofit ogranization to educated about trains to public. Often time, there are free Saturdays to promote the train rides.",
     target: "_blank",
     href: "/grandconcourserailroad",
     image: "/images/grand-concourse-railroad.png",
-  },
-  {
-    name: "SB Reef Lights",
-    url: "https://sbreeflights.com/",
-    description:
-      "SB Reef Lights is owned by Mike and Collette Herman who started off group buy from Facebook.",
-    target: "_blank",
-    href: "/sbreeflights",
-    image: "/images/sb-reef-lights-logo.jpg",
-  },
-  {
-    name: "SB Reef Lights",
-    url: "https://sbreeflights.com/",
-    description:
-      "SB Reef Lights is owned by Mike and Collette Herman who started off group buy from Facebook.",
-    target: "_blank",
-    href: "/sbreeflights",
-    image: "/images/sb-reef-lights-logo.jpg",
-  },
-  {
-    name: "SB Reef Lights",
-    url: "https://sbreeflights.com/",
-    description:
-      "SB Reef Lights is owned by Mike and Collette Herman who started off group buy from Facebook.",
-    target: "_blank",
-    href: "/sbreeflights",
-    image: "/images/sb-reef-lights-logo.jpg",
-  },
-  {
-    name: "SB Reef Lights",
-    url: "https://sbreeflights.com/",
-    description:
-      "SB Reef Lights is owned by Mike and Collette Herman who started off group buy from Facebook.",
-    target: "_blank",
-    href: "/sbreeflights",
-    image: "/images/sb-reef-lights-logo.jpg",
   },
 ];
 
