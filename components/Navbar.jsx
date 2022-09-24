@@ -7,7 +7,6 @@ import {
   faFacebook,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../images/logo.png";
 
 const menuLinks = [
   { name: "About", to: "/about", target: "_self" },
@@ -37,13 +36,13 @@ const socialMedia = [
 
 const Navbar = ({ props }) => {
   return (
-    <nav class='navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top'>
-      <div class='container'>
+    <nav className='navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top'>
+      <div className='container'>
         <Link href={"/"}>
-          <a class='navbar-brand'>
+          <a className='navbar-brand'>
             <Image
               alt='Terry Hunt - Full-Stack Developer'
-              src={logo}
+              src={"/images/logo.png"}
               height={"65px"}
               width={"65px"}
               style={{ borderRadius: "50%" }}
@@ -52,7 +51,7 @@ const Navbar = ({ props }) => {
         </Link>
 
         <button
-          class='navbar-toggler'
+          className='navbar-toggler'
           type='button'
           data-bs-toggle='collapse'
           data-bs-target='#navbarCollapse'
@@ -60,10 +59,10 @@ const Navbar = ({ props }) => {
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
-          <span class='navbar-toggler-icon'></span>
+          <span className='navbar-toggler-icon'></span>
         </button>
-        <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='navbar-nav m-auto mb-2 mb-md-0 text-center'>
+        <div className='collapse navbar-collapse' id='navbarCollapse'>
+          <ul className='navbar-nav m-auto mb-2 mb-md-0 text-center'>
             {menuLinks.map((link, index) => (
               <Link href={link.to} key={index}>
                 <li className='nav-item'>

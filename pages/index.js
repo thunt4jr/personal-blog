@@ -13,7 +13,6 @@ import {
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
-import { Container } from "react-bootstrap";
 import TopMenu from "../components/Navbar";
 
 const DOMAIN = "https://terryhunt.dev";
@@ -94,7 +93,7 @@ export default function Home({
       </Head>
       <TopMenu />
       <main className='d-flex justify-content-center align-items-center pt-3'>
-        <Container className='container text-center'>
+        <div className='container text-center'>
           <h1 className='display-4'>Terry Hunt</h1>
           <h2 className='display-6'>Full-Stack Developer</h2>
 
@@ -127,7 +126,7 @@ export default function Home({
           <Link href='/about'>
             <a className='btn'>Learn More...</a>
           </Link>
-        </Container>
+        </div>
       </main>
       <Contact />
       <Footer />

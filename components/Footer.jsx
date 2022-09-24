@@ -21,7 +21,6 @@ const Footer = () => {
             href='https://nextjs.org/'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-white-50'
           >
             Next.js
           </a>{" "}
@@ -30,7 +29,6 @@ const Footer = () => {
             href='https://terryhunt.dev'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-white-50'
           >
             Terry Hunt
           </a>
