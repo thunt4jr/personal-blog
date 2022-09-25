@@ -9,7 +9,12 @@ const Contact = () => {
         Feel free to contact Terry Hunt anytime about jobs you have available or
         projects that you need to be done for your business.
       </p>
-      <form method='POST' name='contact'>
+      <form
+        method='POST'
+        name='contact'
+        action='/?success=true'
+        data-netlify='true'
+      >
         <input type='hidden' name='form-name' value='contact' />
         <div className='row'>
           <div className='col'>
