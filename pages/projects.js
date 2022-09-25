@@ -8,13 +8,23 @@ import Footer from "../components/Footer";
 
 const clients = [
   {
+    name: "Grand Concourse Railroad",
+    url: "https://grand-concourse-railroad.netlify.app/",
+    description:
+      "The Grand Concourse Railroad is a nonprofit ogranization to educated about trains to public. Often time, there are free Saturdays to promote the train rides.",
+    target: "_blank",
+    href: "grand-concourse-railroad",
+    image: "/images/grand-concourse-railroad.png",
+    platform: "ReactJS",
+  },
+  {
     name: "Reefmaker",
     url: "https://reefmaker.netlify.app/",
     description:
       "Reefmaker is a commercial website to promote its business on the internet with a passion for improving the marine life in the Gulf of Mexico. Their website is designed in WordPress and is now in the process of recreating it into NextJS.",
     target: "_blank",
     href: "reefmaker",
-    image: "/images/reefmaker.png",
+    image: "/images/reefmaker-logo.png",
     platform: "NextJS",
   },
   {
@@ -28,14 +38,14 @@ const clients = [
     platform: "Prestashop",
   },
   {
-    name: "Grand Concourse Railroad",
+    name: "New Life Dog Rescue",
     url: "https://grand-concourse-railroad.netlify.app/",
     description:
-      "The Grand Concourse Railroad is a nonprofit ogranization to educated about trains to public. Often time, there are free Saturdays to promote the train rides.",
+      "New Life Dog Rescue was one of my favorite clients to work with. Not only to do web design for New Life Dog Rescue but get to see updates daily on dogs from the worst condition to the perfect fur-ever home.",
     target: "_blank",
-    href: "grand-concourse-railroad",
-    image: "/images/grand-concourse-railroad.png",
-    platform: "ReactJS",
+    href: "new-life-dog-rescue",
+    image: "/images/new-life-dog-rescue.png",
+    platform: "WordPress",
   },
   {
     name: "Billy's Reef Connection",
@@ -54,7 +64,7 @@ const clients = [
       "Annie Faceted is a blogging website by Annie based on delicious food that she enjoys sharing. This platform is WordPress. ",
     target: "_blank",
     href: "annie-faceted",
-    image: "/images/annie-faceted-transparent.png",
+    image: "/images/annie-faceted.png",
     platform: "WordPress",
   },
 ];
