@@ -10,27 +10,24 @@ import {
 
 const menuLinks = [
   { name: "About", to: "/about", target: "_self" },
-  { name: "Blog", to: "/blog", target: "_self" },
+  // { name: "Blog", to: "/blog", target: "_self" },
   { name: "Resume", to: "/resume", target: "_self" },
   { name: "Projects", to: "/projects", target: "_self" },
-  { name: "Contact", to: "#", target: "_self" },
+  { name: "Contact", to: "#contact", target: "_self" },
 ];
 
 const socialMedia = [
   {
     icon: faFacebook,
     href: "https://www.facebook.com/terryhunt4jr",
-    target: "_blank",
   },
   {
     icon: faLinkedin,
     href: "https://www.linkedin.com/in/terry-l-hunt-jr/",
-    target: "_blank",
   },
   {
     icon: faDiscord,
     href: "https://discord.com/users/thunt4jr#5515",
-    target: "_blank",
   },
 ];
 
@@ -75,7 +72,12 @@ const Navbar = ({ props }) => {
           </ul>
           <div className='d-flex flex-row justify-content-center'>
             {socialMedia.map((link, index) => (
-              <Link key={index} href={link.href} target={link.target}>
+              <Link
+                key={index}
+                href={link.href}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <a>
                   <FontAwesomeIcon
                     icon={link.icon}

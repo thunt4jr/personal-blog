@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import TopMenu from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
@@ -69,7 +69,7 @@ export default function About({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
+      <TopMenu />
       <main>
         <div className='container py-3'>
           <h1 className='pb-3 text-center'>
