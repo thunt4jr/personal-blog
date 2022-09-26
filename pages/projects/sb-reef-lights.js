@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
@@ -11,9 +12,70 @@ import sbWebsite from "../../public/images/sb-reef-lights-website.png";
 import sbMenuOne from "../../public/images/sb-menu-1.png";
 import sbMenuTwo from "../../public/images/sb-menu-2.png";
 
-export default function sbreeflights() {
+const DOMAIN = "https://terryhunt.dev";
+const DEFAULT_OG_IMAGE = "";
+export default function sbreeflights({
+  title = "SB Reef Lights - Terry Hunt - Full Stack Developer",
+  description = "",
+  siteName = "Default Page",
+  canonical = DOMAIN,
+  ogImage = DEFAULT_OG_IMAGE,
+  ogType = "website",
+  twitterHandle = "@TerryHuntDev",
+}) {
   return (
     <>
+      <Head>
+        <title key='title'>{`${title} – ${siteName}`}</title>
+        <meta name='description' content={description} />
+        <meta key='og_type' property='og:type' content={ogType} />
+        <meta key='og_title' property='og:title' content={title} />
+        <meta
+          key='og_description'
+          property='og:description'
+          content={description}
+        />
+        <meta key='og_locale' property='og:locale' content='en_IE' />
+        <meta key='og_site_name' property='og:site_name' content={siteName} />
+        <meta key='og_url' property='og:url' content={canonical ?? DOMAIN} />
+        <meta key='og_site_name' property='og:site_name' content={siteName} />
+        <meta
+          key='og_image'
+          property='og:image'
+          content={ogImage ?? DEFAULT_OG_IMAGE}
+        />
+        <meta
+          key='og_image:alt'
+          property='og:image:alt'
+          content={`${title} | ${siteName}`}
+        />
+        <meta key='og_image:width' property='og:image:width' content='1200' />
+        <meta key='og_image:height' property='og:image:height' content='630' />
+
+        <meta name='robots' content='index,follow' />
+
+        <meta
+          key='twitter:card'
+          name='twitter:card'
+          content='summary_large_image'
+        />
+        <meta key='twitter:site' name='twitter:site' content={twitterHandle} />
+        <meta
+          key='twitter:creator'
+          name='twitter:creator'
+          content={twitterHandle}
+        />
+        <meta key='twitter:title' property='twitter:title' content={title} />
+        <meta
+          key='twitter:description'
+          property='twitter:description'
+          content={description}
+        />
+
+        <link rel='canonical' href={canonical ?? DOMAIN} />
+
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <Navbar />
       <div className='container text-center'>
         <Image src={sbReefLightsLogo} alt='SB Reef Lights' />
@@ -21,7 +83,7 @@ export default function sbreeflights() {
       <div className='container'>
         <h1 className='text-center'>
           SB Reef Lights
-          <small className='lead'> - It's What Coral Crave!</small>
+          <small className='lead'> - It&apos;s What Coral Crave!</small>
         </h1>
         <p>
           SB Reef Lights is one of the most successful clients I have worked
@@ -30,7 +92,7 @@ export default function sbreeflights() {
           was working a full-time job and starting their group buy on Facebook
           in the early 2010s. With much success that Mike has done for the group
           buy, I have reached out to Mike if he wants a website. Not only was
-          the group buy successful, but the owners’ leadership was beyond
+          the group buy successful, but the owners&apos; leadership was beyond
           successful in ensuring that all customers were taken care of.
         </p>
         <Image src={sbWebsite} alt="SB Reef Lights' Website" />
