@@ -118,7 +118,7 @@ export default function Home({
             (Social Media Marketing). Along with HTML/CSS web development since
             the 1990s and over ten years of experience with WordPress,
             Prestashop, and many other CMS. Not only focus on WordPress, HTML,
-            and CSS but also focus on React.js, Next.js, and Javascript. With a
+            and CSS but also focus on React.js, Next.js, and Javascript. I have a
             passion for web and full-stack development, I constantly thrive on
             new projects and learn more about improvements.
           </p>
