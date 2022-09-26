@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #395B64;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -35,6 +39,10 @@ a {
 
     input:placeholder-shown+label {
         color: #2C3333;
+    }
+
+    a {
+        color: #EEEEEE
     }
 
     a:hover {
