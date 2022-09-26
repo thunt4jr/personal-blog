@@ -12,7 +12,7 @@ import sbWebsite from "../../public/images/sb-reef-lights-website.png";
 import sbMenuOne from "../../public/images/sb-menu-1.png";
 import sbMenuTwo from "../../public/images/sb-menu-2.png";
 
-const DOMAIN = "https://terryhunt.dev";
+const DOMAIN = "https://terryhunt.dev/projects/sb-reef-lights";
 const DEFAULT_OG_IMAGE = "";
 export default function sbreeflights({
   title = "SB Reef Lights - Terry Hunt - Full Stack Developer",
