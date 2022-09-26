@@ -12,6 +12,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
 
+const schemaData = {
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  name: "Terry Hunt",
+  image: "https://terryhunt.dev/images/terry-hunt.jpg",
+  description:
+    "Terry Hunt is a full-stack developer with great understanding in WordPress, Prestashop, OpenCart, ReactJS and NextJS",
+  url: "https://terryhunt.dev",
+  jobTitle: "Full-Stack Developer",
+  email: "hello@terryhunt.dev",
+  gender: "male",
+  givenName: "Terry",
+};
+
 const DOMAIN = "https://terryhunt.dev";
 const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
 const skills = [
@@ -87,6 +101,10 @@ export default function Home({
         <link rel='canonical' href={canonical ?? DOMAIN} />
 
         <link rel='shortcut icon' href='/favicon.ico' />
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
       </Head>
       <main className='d-flex justify-content-center align-items-center pt-3'>
         <div className='container text-center'>
