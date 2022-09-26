@@ -38,7 +38,7 @@ const Contact = () => {
                 id='floatingInput'
                 className='form-control'
                 placeholder='First Name'
-                name='First Name'
+                name='first-name'
               />
               <label htmlFor='floatingInput'>First Name</label>
             </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                 id='floatingInput'
                 className='form-control'
                 placeholder='Last Name'
-                name='Last Name'
+                name='last-name'
               />
               <label htmlFor='floatingInput'>Last Name</label>
             </div>
