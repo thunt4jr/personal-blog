@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
 import Link from "next/link";
-import Contact from "../components/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3,
@@ -13,7 +11,6 @@ import {
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
-import TopMenu from "../components/Navbar";
 
 const DOMAIN = "https://terryhunt.dev";
 const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
@@ -91,7 +88,6 @@ export default function Home({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <TopMenu />
       <main className='d-flex justify-content-center align-items-center pt-3'>
         <div className='container text-center'>
           <h1 className='display-4'>Terry Hunt</h1>
@@ -128,8 +124,6 @@ export default function Home({
           </Link>
         </div>
       </main>
-      <Contact />
-      <Footer />
     </div>
   );
 }

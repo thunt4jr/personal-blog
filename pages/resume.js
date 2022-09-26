@@ -181,7 +181,6 @@ export default function resume({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <TopMenu />
       <div className='container'>
         <div className='row px-3'>
           <div className='col'>
@@ -294,8 +293,6 @@ export default function resume({
         </div>
         <hr />
       </div>
-      <Contact />
-      <Footer />
     </>
   );
 }

@@ -4,7 +4,9 @@ import TopMenu from "../components/Navbar";
 export default function blog() {
   return (
     <>
-      <TopMenu />
+      <div>
+        
+      </div>
     </>
   );
 }

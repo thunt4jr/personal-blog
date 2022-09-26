@@ -134,7 +134,6 @@ export default function projects({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <TopMenu />
       <div className='container'>
         <div className='col'>
           <h1 className='text-center'>
@@ -182,8 +181,6 @@ export default function projects({
           </div>
         </div>
       </div>
-      <Contact />
-      <Footer />
     </>
   );
 }
