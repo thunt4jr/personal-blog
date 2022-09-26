@@ -101,11 +101,11 @@ export default function Home({
         <link rel='canonical' href={canonical ?? DOMAIN} />
 
         <link rel='shortcut icon' href='/favicon.ico' />
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
       </Head>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <main className='d-flex justify-content-center align-items-center pt-3'>
         <div className='container text-center'>
           <h1 className='display-4'>Terry Hunt</h1>
