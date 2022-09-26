@@ -37,22 +37,10 @@ const Contact = () => {
                 type={"text"}
                 id='floatingInput'
                 className='form-control'
-                placeholder='First Name'
-                name='first-name'
+                placeholder='Full Name'
+                name='full-name'
               />
-              <label htmlFor='floatingInput'>First Name</label>
-            </div>
-          </div>
-          <div className='col'>
-            <div className='form-floating mb-3'>
-              <input
-                type={"text"}
-                id='floatingInput'
-                className='form-control'
-                placeholder='Last Name'
-                name='last-name'
-              />
-              <label htmlFor='floatingInput'>Last Name</label>
+              <label htmlFor='floatingInput'>Full Name</label>
             </div>
           </div>
           <div>
