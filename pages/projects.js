@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Head from "next/head";
-import TopMenu from "../components/Navbar";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 
 const clients = [
   {
@@ -136,7 +133,7 @@ export default function projects({
       </Head>
       <div className='container'>
         <div className='col'>
-          <h1 className='text-center'>
+          <h1 className='text-center pt-3'>
             Terry Hunt&apos;s <small className='lead'>projects</small>
           </h1>
           <p>
@@ -170,9 +167,9 @@ export default function projects({
                   <h5 className='card-title'>{res.name}</h5>
                   <p className='card-text'>{res.description}</p>
                   <p className='lead'>Platform: {res.platform}</p>
-                  <Link href={"#"}>
+                  <Link href={"/projects/" + `${res.href}`}>
                     <button type='button' className='btn btn-secondary'>
-                      Coming Soon
+                      {res.name}
                     </button>
                   </Link>
                 </div>

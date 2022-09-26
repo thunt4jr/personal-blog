@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import Contact from "../../components/Contact";
 import sbReefLightsLogo from "../../public/images/sb-reef-lights-logo.jpg";
 import sbReeferLogo from "../../public/images/sb-reefer-lights-logo.png";
 import sbReefs from "../../public/images/sb-reefs.png";
@@ -76,7 +73,6 @@ export default function sbreeflights({
 
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
       <div className='container text-center'>
         <Image src={sbReefLightsLogo} alt='SB Reef Lights' />
       </div>
@@ -167,8 +163,6 @@ export default function sbreeflights({
           </div>
         </div>
       </div>
-      <Contact />
-      <Footer />
     </>
   );
 }
