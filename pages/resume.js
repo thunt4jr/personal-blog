@@ -118,10 +118,10 @@ const experience = [
   },
 ];
 const DOMAIN = "https://terryhunt.dev";
-const DEFAULT_OG_IMAGE = "";
+const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
 export default function resume({
   title = "Terry Hunt's Resume for Full-Stack Developer Position",
-  description = "Resume of Terry Hunt for a Full-Stack Developer position along with WordPress, Prestashop, Email HTML, Newsletter, and ReactJS experience. ",
+  description = "Resume of Terry Hunt for a Full-Stack Developer position along with WordPress, Prestashop, Email HTML, Newsletter, and ReactJS experience.",
   siteName = "Resume Page",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,

@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
 const DOMAIN = "https://terryhunt.dev";
-const DEFAULT_OG_IMAGE = "";
+const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
 
 export default function About({
   title = "Learn more about Terry Hunt",

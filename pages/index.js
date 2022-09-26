@@ -16,7 +16,7 @@ import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
 import TopMenu from "../components/Navbar";
 
 const DOMAIN = "https://terryhunt.dev";
-const DEFAULT_OG_IMAGE = "";
+const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
 const skills = [
   { icon: faHtml5 },
   { icon: faCss3 },

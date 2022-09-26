@@ -13,11 +13,11 @@ import sbMenuOne from "../../public/images/sb-menu-1.png";
 import sbMenuTwo from "../../public/images/sb-menu-2.png";
 
 const DOMAIN = "https://terryhunt.dev/projects/sb-reef-lights";
-const DEFAULT_OG_IMAGE = "";
+const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
 export default function sbreeflights({
-  title = "SB Reef Lights - Terry Hunt - Full Stack Developer",
-  description = "",
-  siteName = "Default Page",
+  title = "SB Reef Lights project done by Terry Hunt",
+  description = "One of Terry Hunt's projects working with SB Reef Lights as a full-stack developer using Prestashop",
+  siteName = "SB Reef Lights",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,
   ogType = "website",

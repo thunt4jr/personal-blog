@@ -70,7 +70,7 @@ const clients = [
 ];
 
 const DOMAIN = "https://terryhunt.dev/";
-const DEFAULT_OG_IMAGE = "";
+const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
 
 export default function projects({
   title = "Projects that Terry Hunt has done as a full-stack developer",
