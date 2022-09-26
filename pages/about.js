@@ -9,7 +9,7 @@ const DEFAULT_OG_IMAGE = "";
 
 export default function About({
   title = "Learn more about Terry Hunt",
-  description = "",
+  description = "To learn more about Terry Hunt, how he has become a full-stack developer, and his passion as a web developer.",
   siteName = "About Page",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,
@@ -80,9 +80,9 @@ export default function About({
             history. I&apos;m a Texan living in Florida for most of my life.
             However, I have moved to Tennessee various times on different
             occasions. I&apos;m a firm believer in God and Jesus. In 2012, the
-            most incredible day, I met Rebekah, a huge New Jerseyan, and
-            tied the knot in 2014. We have two beautiful children together,
-            Asher and Ava.
+            most incredible day, I met Rebekah, a huge New Jerseyan, and tied
+            the knot in 2014. We have two beautiful children together, Asher and
+            Ava.
           </p>
           <p>
             The most significant trouble I have is not able to convert the New

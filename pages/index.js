@@ -31,8 +31,8 @@ const skills = [
 
 export default function Home({
   title = "Terry Hunt Dev - Full Stack Developer",
-  description = "",
-  siteName = "Default Page",
+  description = "Terry Hunt is a Full-Stack Developer with excellent knowledge in a variety of web development fields, including HTML/CSS/JS, WordPress, ReactJS, etc.",
+  siteName = "Home",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,
   ogType = "website",

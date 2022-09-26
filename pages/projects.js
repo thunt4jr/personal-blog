@@ -69,13 +69,13 @@ const clients = [
   },
 ];
 
-const DOMAIN = "https://terryhunt.dev";
+const DOMAIN = "https://terryhunt.dev/";
 const DEFAULT_OG_IMAGE = "";
 
 export default function projects({
-  title = "Projects that has been done by Terry Hunt",
-  description = "Projects that Terry Hunt has done previously and always looking forward to new projects.",
-  siteName = "Terry Hunt's Projects",
+  title = "Projects that Terry Hunt has done as a full-stack developer",
+  description = "Projects that Terry Hunt has done previously as a full-stack developer and always looking forward to new projects.",
+  siteName = "Projects",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,
   ogType = "website",
