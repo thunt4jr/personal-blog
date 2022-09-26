@@ -122,6 +122,7 @@ export default function sbreeflights({
           <li>Daily Backups</li>
           <li>Database Administrator - MySQL</li>
           <li>SEO - Search Engine Optimization</li>
+          <li>Troubleshoot Website and Serverside</li>
           <li>Add & Remove Products</li>
           <li>Create Graphics</li>
           <li>
@@ -150,8 +151,9 @@ export default function sbreeflights({
       </div>
       <hr className='container' />
       <div className='container pt-2'>
-        <h3 className='text-center'>
-          Other projects along with SB Reef Lights
+        <h3 className='text-center pb-2'>
+          <small className='lead'>Other projects along with</small> SB Reef
+          Lights
         </h3>
         <div className='row'>
           <div className='col'>
