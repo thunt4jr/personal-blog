@@ -9,12 +9,7 @@ const Contact = () => {
         Feel free to contact Terry Hunt anytime about jobs you have available or
         projects that you need to be done for your business.
       </p>
-      <form
-        method='POST'
-        name='contact'
-        action='/'
-        data-netlify='true'
-      >
+      <form method='POST' name='contact' action='/' data-netlify='true'>
         <input type='hidden' name='form-name' value='contact' />
         <div className='row'>
           <div className='col'>
@@ -26,7 +21,7 @@ const Contact = () => {
                 placeholder='name@example.com'
                 name='email'
               />
-              <label htmlFor='floatingInput'>Email Address</label>
+              <label htmlFor='email'>Email Address</label>
             </div>
           </div>
         </div>
@@ -40,7 +35,7 @@ const Contact = () => {
                 placeholder='Full Name'
                 name='full-name'
               />
-              <label htmlFor='floatingInput'>Full Name</label>
+              <label htmlFor='full-name'>Full Name</label>
             </div>
           </div>
           <div>
