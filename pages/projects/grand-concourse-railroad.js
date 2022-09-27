@@ -5,10 +5,25 @@ import grandConcourseRailroadLogo from "../../public/images/grand-concourse-rail
 import halloweenDesign from "../../public/images/halloween-design-grand-concourse-railroad.png";
 import halloweenDesignMobile from "../../public/images/halloween-design-grand-concourse-railroad-mobile-view.png";
 import grandConcourseRailroadDesktop from "../../public/images/grand-concourse-railroad-desktop-index.png";
+import tvGraphic from "../../public/images/spooky-train-scary-trail-tv.png";
 
 const DOMAIN = "https://terryhunt.dev/";
 const DEFAULT_OG_IMAGE =
   "https://terryhunt.dev/images/grand-concourse-railroad.png";
+
+const graphic = [
+  {
+    link: tvGraphic,
+    name: "Grand Concourse Railroad Halloween Graphic for TV",
+  },
+  { link: "", name: "" },
+  { link: "", name: "" },
+  { link: "", name: "" },
+  { link: "", name: "" },
+  { link: "", name: "" },
+  { link: "", name: "" },
+  { link: "", name: "" },
+];
 export default function grandconcourserailroad({
   title = "Grand Concourse Railroad project done by Terry Hunt",
   description = "One of Terry Hunt's projects working with Grand Concourse Railroad as a full-stack developer using ReactJS",
@@ -132,6 +147,16 @@ export default function grandconcourserailroad({
               donations and create awareness of their organization by creating
               sponsorship packages.
             </p>
+            <p>Other graphics I have designed.</p>
+            <div className='container'>
+              <div className='row'>
+                {graphic.map((res, req) => (
+                  <div className='col' key={req}>
+                    <Image src={res.link} alt={res.name} />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
