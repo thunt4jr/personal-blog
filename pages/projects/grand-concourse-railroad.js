@@ -2,9 +2,13 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import grandConcourseRailroadLogo from "../../public/images/grand-concourse-railroad.png";
+import halloweenDesign from "../../public/images/halloween-design-grand-concourse-railroad.png";
+import halloweenDesignMobile from "../../public/images/halloween-design-grand-concourse-railroad-mobile-view.png";
+import grandConcourseRailroadDesktop from "../../public/images/grand-concourse-railroad-desktop-index.png";
 
 const DOMAIN = "https://terryhunt.dev/";
-const DEFAULT_OG_IMAGE = "https://terryhunt.dev/images/logo.png";
+const DEFAULT_OG_IMAGE =
+  "https://terryhunt.dev/images/grand-concourse-railroad.png";
 export default function grandconcourserailroad({
   title = "Grand Concourse Railroad project done by Terry Hunt",
   description = "One of Terry Hunt's projects working with Grand Concourse Railroad as a full-stack developer using ReactJS",
@@ -86,6 +90,17 @@ export default function grandconcourserailroad({
               are on the first Saturday of the month except for October and
               December.
             </p>
+            <a
+              href='https://grand-concourse-railroad.netlify.app/'
+              rel='noopener noreferrer'
+              target={"_blank"}
+            >
+              Development Link: https://grand-concourse-railroad.netlify.app/
+            </a>
+            <Image
+              src={grandConcourseRailroadDesktop}
+              alt='Grand Concourse Railroad'
+            />
             <p>
               Initially, the job at Grand Concourse Railroad was to do marketing
               flyers for social media posts, handouts, and posters. No website
@@ -102,6 +117,16 @@ export default function grandconcourserailroad({
               WordPress if they strictly spend on web design and creating their
               entire website from scratch.
             </p>
+            <p>Halloween Design - Desktop View</p>
+            <Image
+              src={halloweenDesign}
+              alt='Halloween Design for Grand Concourse Railroad Desktop View'
+            />
+            <p>Halloween Design - Mobile View</p>
+            <Image
+              src={halloweenDesignMobile}
+              alt='Halloween Design for Grand Concourse Railroad Mobile View'
+            />
             <p>
               Also have provided business consultation on how to receive more
               donations and create awareness of their organization by creating
