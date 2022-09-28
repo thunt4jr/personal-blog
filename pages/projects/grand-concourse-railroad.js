@@ -16,13 +16,14 @@ const graphic = [
     link: tvGraphic,
     name: "Grand Concourse Railroad Halloween Graphic for TV",
   },
-  { link: "", name: "" },
-  { link: "", name: "" },
-  { link: "", name: "" },
-  { link: "", name: "" },
-  { link: "", name: "" },
-  { link: "", name: "" },
-  { link: "", name: "" },
+  {
+    link: tvGraphic,
+    name: "Grand Concourse Railroad Halloween Graphic for TV",
+  },
+  {
+    link: tvGraphic,
+    name: "Grand Concourse Railroad Halloween Graphic for TV",
+  },
 ];
 export default function grandconcourserailroad({
   title = "Grand Concourse Railroad project done by Terry Hunt",
@@ -149,13 +150,13 @@ export default function grandconcourserailroad({
             </p>
             <p>Other graphics I have designed.</p>
             <div className='container'>
-              <div className='row'>
-                {graphic.map((res, req) => (
-                  <div className='col' key={req}>
+              {graphic.map((res, req) => (
+                <div className='row' key={req}>
+                  <div className='col'>
                     <Image src={res.link} alt={res.name} />
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
