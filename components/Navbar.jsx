@@ -37,8 +37,8 @@ const Navbar = () => {
         <Image
           alt="Terry Hunt - Full-Stack Developer"
           src="/images/logo.png"
-          height="65px"
-          width="65px"
+          height={65} // Numeric value without 'px'
+          width={65} // Numeric value without 'px'
           className="navbar-brand"
           style={{ borderRadius: "50%", cursor: "pointer" }}
           onClick={() => (window.location.href = "/")}
