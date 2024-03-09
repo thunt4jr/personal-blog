@@ -16,75 +16,71 @@ export default function About({
   return (
     <div>
       <Head>
-        <title key='title'>{`${title} – ${siteName}`}</title>
-        <meta name='description' content={description} />
-        <meta key='og_type' property='og:type' content={ogType} />
-        <meta key='og_title' property='og:title' content={title} />
+        <title key="title">{`${title} – ${siteName}`}</title>
+        <meta name="description" content={description} />
+        <meta key="og_type" property="og:type" content={ogType} />
+        <meta key="og_title" property="og:title" content={title} />
         <meta
-          key='og_description'
-          property='og:description'
+          key="og_description"
+          property="og:description"
           content={description}
         />
-        <meta key='og_locale' property='og:locale' content='en_IE' />
-        <meta key='og_site_name' property='og:site_name' content={siteName} />
-        <meta key='og_url' property='og:url' content={canonical ?? DOMAIN} />
-        <meta key='og_site_name' property='og:site_name' content={siteName} />
+        <meta key="og_locale" property="og:locale" content="en_IE" />
+        <meta key="og_site_name" property="og:site_name" content={siteName} />
+        <meta key="og_url" property="og:url" content={canonical ?? DOMAIN} />
+        <meta key="og_site_name" property="og:site_name" content={siteName} />
         <meta
-          key='og_image'
-          property='og:image'
+          key="og_image"
+          property="og:image"
           content={ogImage ?? DEFAULT_OG_IMAGE}
         />
         <meta
-          key='og_image:alt'
-          property='og:image:alt'
+          key="og_image:alt"
+          property="og:image:alt"
           content={`${title} | ${siteName}`}
         />
-        <meta key='og_image:width' property='og:image:width' content='1200' />
-        <meta key='og_image:height' property='og:image:height' content='630' />
+        <meta key="og_image:width" property="og:image:width" content="1200" />
+        <meta key="og_image:height" property="og:image:height" content="630" />
 
-        <meta name='robots' content='index,follow' />
+        <meta name="robots" content="index,follow" />
 
         <meta
-          key='twitter:card'
-          name='twitter:card'
-          content='summary_large_image'
+          key="twitter:card"
+          name="twitter:card"
+          content="summary_large_image"
         />
-        <meta key='twitter:site' name='twitter:site' content={twitterHandle} />
+        <meta key="twitter:site" name="twitter:site" content={twitterHandle} />
         <meta
-          key='twitter:creator'
-          name='twitter:creator'
+          key="twitter:creator"
+          name="twitter:creator"
           content={twitterHandle}
         />
-        <meta key='twitter:title' property='twitter:title' content={title} />
+        <meta key="twitter:title" property="twitter:title" content={title} />
         <meta
-          key='twitter:description'
-          property='twitter:description'
+          key="twitter:description"
+          property="twitter:description"
           content={description}
         />
 
-        <link rel='canonical' href={canonical ?? DOMAIN} />
+        <link rel="canonical" href={canonical ?? DOMAIN} />
 
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='container py-3'>
-          <h1 className='pb-3 text-center'>
-            <small className='lead'>about </small>Terry Hunt
+        <div className="container py-3">
+          <h1 className="pb-3 text-center">
+            <small className="lead">about </small>Terry Hunt
           </h1>
           <p>
-            Decent information about me, my family, and my software development
-            history. I&apos;m a Texan living in Florida for most of my life.
-            However, I have moved to Tennessee various times on different
-            occasions. I&apos;m a firm believer in God and Jesus. In 2012, the
-            most incredible day, I met Rebekah, a huge New Jerseyan, and tied
-            the knot in 2014. We have two beautiful children together, Asher and
-            Ava.
-          </p>
-          <p>
-            The most significant trouble I have is not able to convert the New
-            Jerseyan, who is a giant Philiphian Eagle, into a Dallas Cowboy fan.
-            We love watching football and rooting for our opponents team against
-            their favorite for enjoyment.
+            As a full-stack developer, my journey is not just about coding and
+            technology; it&apos;s deeply rooted in my personal experiences.
+            Originally from Texas, I&apos;ve spent much of my life in Florida,
+            with several relocations to Tennessee along the way. My faith in God
+            and Jesus is central to who I am. I am a proud parent to three
+            wonderful children, Asher, Ava, and Emmitt, who add immeasurable joy
+            and purpose to my life. My role as a full-stack developer is an
+            integral part of my identity, shaped by a rich tapestry of personal
+            and professional experiences.
           </p>
           <p>
             Now serious discussion on how I get involved in web development. I

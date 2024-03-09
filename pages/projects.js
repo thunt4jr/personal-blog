@@ -81,60 +81,60 @@ export default function projects({
   return (
     <>
       <Head>
-        <title key='title'>{`${title} – ${siteName}`}</title>
-        <meta name='description' content={description} />
-        <meta key='og_type' property='og:type' content={ogType} />
-        <meta key='og_title' property='og:title' content={title} />
+        <title key="title">{`${title} – ${siteName}`}</title>
+        <meta name="description" content={description} />
+        <meta key="og_type" property="og:type" content={ogType} />
+        <meta key="og_title" property="og:title" content={title} />
         <meta
-          key='og_description'
-          property='og:description'
+          key="og_description"
+          property="og:description"
           content={description}
         />
-        <meta key='og_locale' property='og:locale' content='en_IE' />
-        <meta key='og_site_name' property='og:site_name' content={siteName} />
-        <meta key='og_url' property='og:url' content={canonical ?? DOMAIN} />
-        <meta key='og_site_name' property='og:site_name' content={siteName} />
+        <meta key="og_locale" property="og:locale" content="en_IE" />
+        <meta key="og_site_name" property="og:site_name" content={siteName} />
+        <meta key="og_url" property="og:url" content={canonical ?? DOMAIN} />
+        <meta key="og_site_name" property="og:site_name" content={siteName} />
         <meta
-          key='og_image'
-          property='og:image'
+          key="og_image"
+          property="og:image"
           content={ogImage ?? DEFAULT_OG_IMAGE}
         />
         <meta
-          key='og_image:alt'
-          property='og:image:alt'
+          key="og_image:alt"
+          property="og:image:alt"
           content={`${title} | ${siteName}`}
         />
-        <meta key='og_image:width' property='og:image:width' content='1200' />
-        <meta key='og_image:height' property='og:image:height' content='630' />
+        <meta key="og_image:width" property="og:image:width" content="1200" />
+        <meta key="og_image:height" property="og:image:height" content="630" />
 
-        <meta name='robots' content='index,follow' />
+        <meta name="robots" content="index,follow" />
 
         <meta
-          key='twitter:card'
-          name='twitter:card'
-          content='summary_large_image'
+          key="twitter:card"
+          name="twitter:card"
+          content="summary_large_image"
         />
-        <meta key='twitter:site' name='twitter:site' content={twitterHandle} />
+        <meta key="twitter:site" name="twitter:site" content={twitterHandle} />
         <meta
-          key='twitter:creator'
-          name='twitter:creator'
+          key="twitter:creator"
+          name="twitter:creator"
           content={twitterHandle}
         />
-        <meta key='twitter:title' property='twitter:title' content={title} />
+        <meta key="twitter:title" property="twitter:title" content={title} />
         <meta
-          key='twitter:description'
-          property='twitter:description'
+          key="twitter:description"
+          property="twitter:description"
           content={description}
         />
 
-        <link rel='canonical' href={canonical ?? DOMAIN} />
+        <link rel="canonical" href={canonical ?? DOMAIN} />
 
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <div className='container'>
-        <div className='col'>
-          <h1 className='text-center pt-3'>
-            Terry Hunt&apos;s <small className='lead'>projects</small>
+      <div className="container">
+        <div className="col">
+          <h1 className="text-center pt-3">
+            Terry Hunt&apos;s <small className="lead">projects</small>
           </h1>
           <p>
             I have worked with various projects from vanilla HTML – CSS –
@@ -148,27 +148,27 @@ export default function projects({
           <p>Below are the projects that I have done.</p>
           <hr />
         </div>
-        <div className='col'>
-          <div className='row justify-content-center'>
+        <div className="col">
+          <div className="row justify-content-center">
             {clients.map((res, req) => (
               <div
-                className='card mx-2 my-2'
+                className="card mx-2 my-2"
                 style={{ width: "20rem" }}
                 key={req}
               >
                 <Image
-                  className='card-img-top'
+                  className="card-img-top"
                   src={res.image}
                   alt={res.name}
-                  width={"280px"}
-                  height={"180px"}
+                  width={280}
+                  height={180}
                 />
-                <div className='card-body'>
-                  <h5 className='card-title'>{res.name}</h5>
-                  <p className='card-text'>{res.description}</p>
-                  <p className='lead'>Platform: {res.platform}</p>
+                <div className="card-body">
+                  <h5 className="card-title">{res.name}</h5>
+                  <p className="card-text">{res.description}</p>
+                  <p className="lead">Platform: {res.platform}</p>
                   <Link href={"/projects/" + `${res.href}`}>
-                    <button type='button' className='btn btn-secondary'>
+                    <button type="button" className="btn btn-secondary">
                       {res.name}
                     </button>
                   </Link>
