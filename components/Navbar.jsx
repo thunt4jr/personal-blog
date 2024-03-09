@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,11 +8,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const menuLinks = [
-  { name: "About", to: "/about", target: "_self" },
-  // { name: "Blog", to: "/blog", target: "_self" },
-  { name: "Resume", to: "/resume", target: "_self" },
-  { name: "Projects", to: "/projects", target: "_self" },
-  { name: "Contact", to: "#contact", target: "_self" },
+  { name: "About", to: "/about" },
+  // { name: "Blog", to: "/blog" },
+  { name: "Resume", to: "/resume" },
+  { name: "Projects", to: "/projects" },
+  { name: "Contact", to: "#contact" },
 ];
 
 const socialMedia = [
@@ -31,61 +30,60 @@ const socialMedia = [
   },
 ];
 
-const Navbar = ({ props }) => {
+const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top'>
-      <div className='container'>
-        <Link href={"/"}>
-          <a className='navbar-brand'>
-            <Image
-              alt='Terry Hunt - Full-Stack Developer'
-              src={"/images/logo.png"}
-              height={"65px"}
-              width={"65px"}
-              style={{ borderRadius: "50%" }}
-            />
-          </a>
-        </Link>
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark sticky-top">
+      <div className="container">
+        <Image
+          alt="Terry Hunt - Full-Stack Developer"
+          src="/images/logo.png"
+          height="65px"
+          width="65px"
+          className="navbar-brand"
+          style={{ borderRadius: "50%", cursor: "pointer" }}
+          onClick={() => (window.location.href = "/")}
+        />
 
         <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarCollapse'
-          aria-controls='navbarCollapse'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span className='navbar-toggler-icon'></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div className='collapse navbar-collapse' id='navbarCollapse'>
-          <ul className='navbar-nav m-auto mb-2 mb-md-0 text-center'>
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav m-auto mb-2 mb-md-0 text-center">
             {menuLinks.map((link, index) => (
-              <Link href={link.to} key={index}>
-                <li className='nav-item'>
-                  <a className='nav-link' target={link.target} href={link.to}>
-                    {link.name}
-                  </a>
-                </li>
-              </Link>
+              <li
+                className="nav-item"
+                key={index}
+                onClick={() => (window.location.href = link.to)}
+              >
+                <span className="nav-link" style={{ cursor: "pointer" }}>
+                  {link.name}
+                </span>
+              </li>
             ))}
           </ul>
-          <div className='d-flex flex-row justify-content-center'>
+          <div className="d-flex flex-row justify-content-center">
             {socialMedia.map((link, index) => (
-              <Link
+              <a
                 key={index}
                 href={link.href}
-                target='_blank'
-                rel='noopener noreferrer'
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-link"
               >
-                <a>
-                  <FontAwesomeIcon
-                    icon={link.icon}
-                    style={{ height: "30px" }}
-                    className='mx-1 mb-1'
-                  />
-                </a>
-              </Link>
+                <FontAwesomeIcon
+                  icon={link.icon}
+                  style={{ height: "30px" }}
+                  className="mx-1 mb-1"
+                />
+              </a>
             ))}
           </div>
         </div>
